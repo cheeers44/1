@@ -14,6 +14,7 @@ const NpcList: React.FC = () => {
                 <img 
                     src={npc.imagePlaceholder} 
                     alt={npc.name} 
+                    referrerPolicy="no-referrer"
                     className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${npc.name === '뽀삐' ? 'object-top' : 'object-center'}`}
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>

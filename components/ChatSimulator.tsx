@@ -51,7 +51,12 @@ const ChatSimulator: React.FC = () => {
             
             {/* Wallpaper */}
             <div className="absolute inset-0 z-0">
-                <img src="https://i.postimg.cc/vH68zCB6/baegyeong.jpg" className="w-full h-full object-cover opacity-60" alt="Wallpaper" />
+                <img 
+                    src="https://i.postimg.cc/vH68zCB6/baegyeong.jpg" 
+                    className="w-full h-full object-cover opacity-60" 
+                    alt="Wallpaper" 
+                    referrerPolicy="no-referrer"
+                />
             </div>
 
             {/* Home Screen */}

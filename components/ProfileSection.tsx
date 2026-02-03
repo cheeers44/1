@@ -17,6 +17,7 @@ const ProfileSection: React.FC = () => {
              <img 
                 src="https://i.postimg.cc/R0nChKz6/gwag-yong.jpg" 
                 alt="Kwack Yong-cheol" 
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-90 contrast-110 object-top"
              />
           </div>
