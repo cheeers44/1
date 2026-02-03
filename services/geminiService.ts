@@ -2,7 +2,19 @@ import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_PROMPT, STATIC_PHONE_DATA } from '../constants';
 import { AppType } from '../types';
 
-const apiKey = process.env.API_KEY;
+// Safely access process.env to prevent crash in environments where process is undefined
+const getApiKey = () => {
+  try {
+    if (typeof process !== 'undefined' && process.env) {
+      return process.env.API_KEY;
+    }
+  } catch (e) {
+    // Ignore error if process is not defined
+  }
+  return undefined;
+};
+
+const apiKey = getApiKey();
 
 let ai: GoogleGenAI | null = null;
 
