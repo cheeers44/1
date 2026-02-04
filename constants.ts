@@ -7,6 +7,7 @@ export const YONG_CHEOL: CharacterProfile = {
   fakeRole: "수입차 딜러",
   appearance: [
     "188cm / 95kg",
+    "생일: 11월 19일",
     "넓은 어깨, 단단한 근육, 등 뒤 문신",
     "왼쪽 눈썹 흉터, 날카로운 눈매",
     "올블랙 슈트 (집에선 속옷바람)"
